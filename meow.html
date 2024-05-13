@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specifically for my cayauu <3 </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #6960EC;
+        }
+        #container {
+            text-align: center;
+        }
+        #message {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        #btn-next {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #F2A2E8;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Specifically for my cayau <3 </h1>
+        <div id="message"></div>
+        <button id="btn-next">ClickMeWhenDone</button>
+    </div>
+    <script>
+        const messages = [
+            "HAYIIIIIIIIIIIIIIIII",
+            "mesti lama kan cayau dah ngnti ka meda tok",
+            "HEHEHE sorry it took too long to make T^T",
+            "rn its currently 7th of may, tuesday, 5.20 pm",
+            "cayau is probably wondering namahal me ngdu ketok. susah susah ja bla bla wateverrrr",
+            "me confident yang no one ever made this for you (kot) BUT SHUFHUISGUIGIKEHA",
+            "i wanna be the one that will linger on your mind. everytime cayau think of a programmer, OHH THATS MY YAYAUUU aaaa something like that HAHAHAHA",
+            "ayang wanna know kaaaa~",
+            "you are the most precious human being i have ever spend my months with",
+            "you are also the one that makes my day, believed in me when no one did, comforts me when no one will.",
+	    "the way you still make time for me despite being at work, being with your family, being with your friends..",
+            "i love that so much about you",
+            "its crazy how i have you as a lover since last year",
+            "you are literally the best thing, that ever appeared out of nowhere :3",
+            "me love writting long words and making things for you because that's how i express my feelings to you",
+            "my feelings of love, to you",
+            "walaupun cayang dont give me long words like i do..",
+            "you still manage to flutter my heart day by day",
+            "everything about you is the sweetest",
+            "i always wonder..",
+            "what made you love me so much till today",
+            "am i the perfect figure you wanted?",
+            "if im not, i shall try my best to fit the standard of a girl that fills your form",
+            "i shall be the girl that treats you better than your past despite being years younger than you",
+            "i shall be, your, girl :3",
+            "ECEHHHHHH HAHAHAHAHA",
+            "i think nya ja la me wanna say BUT WAIT AGI BISI AFTER THIS SO CLICK THE BUTTON AGAIN MWA",
+            "I love you so sooooo much my love",
+            "HEHEHEE BUBBYE BABEE <3 !!",
+            
+            // Add your own sweet messages here
+        ];
+
+        const messageElement = document.getElementById("message");
+        const nextButton = document.getElementById("btn-next");
+        let currentIndex = 0;
+
+        function displayClickMeWhenDone() {
+            messageElement.textContent = messages[currentIndex];
+            currentIndex = (currentIndex + 1) % messages.length;
+        }
+
+        nextButton.addEventListener("click", displayClickMeWhenDone);
+
+        // Display the first message when the page loads
+        displayClickMeWhenDone();
+    </script>
+</body>
+</html>
